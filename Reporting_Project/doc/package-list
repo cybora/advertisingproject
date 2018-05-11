@@ -1,0 +1,5 @@
+com.reporting
+com.reporting.controller
+com.reporting.model
+com.reporting.repository
+com.reporting.service
