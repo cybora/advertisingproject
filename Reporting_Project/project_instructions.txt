@@ -1,0 +1,31 @@
+Advertising project is a reporting backend that can be used to request advertising reports based on months and sites.
+
+Instructions to build and run the project
+-----------------------------------------
+
+- Checkout the project on https://github.com/cybora/advertisingproject
+- To build project , type " mvn package "
+- To run the project type " mvn spring-boot:run "
+
+
+After running the application, the requested report can be called via API as below:
+
+* The month parameter can be given as numeric [ 1-12 ] or by full name ( like January, February.. ) or in shortened form as jan, feb. The string value of month is case insensitive.
+
+For querying a report based on both month and site :  ( example month as January and site as desktop mobile )
+
+GET http://localhost:8080/reports?month=jan&site=desktop_mobile
+
+For querying a report based on month :  ( example month as February )
+
+GET http://localhost:8080/reports?month=February
+
+For querying a report based on site :  ( example site as android )
+
+GET http://localhost:8080/reports?site=android
+
+
+
+
+
+
